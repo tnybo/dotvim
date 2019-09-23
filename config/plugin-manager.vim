@@ -55,14 +55,14 @@ function! s:installVimPlug()
     else
       let l:autoloadDir = expand('~/.vim/autoload')
     endif
-    let l:vimPlugFile = l.autoloadDir . '/plug.vim'
+    let l:vimPlugFile = l:autoloadDir . '/plug.vim'
     let l:isInstalled = !empty(glob(l:vimPlugFile))
     let l:isInstalled = l:isInstalled || !empty(glob(l:vimPlugFile))
     let l:cmd = "curl -fLo "
-    let l:cmd .= l:vimPlugfile . " "
+    let l:cmd .= l:vimPlugFile . " "
     let l:cmd .= "--create-dirs "
     let l:cmd .= "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
-    echom l:cmd
+    execute 'silent !' . l:cmd
   endif
 endfunction
 

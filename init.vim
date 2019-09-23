@@ -8,6 +8,7 @@ if !s:isVimdataSet | echom "Please set your 'VIMDATA' environment variable" | en
 
 if s:isVimconfigSet
   source $VIMCONFIG/config/plugin-manager.vim
+  source $VIMCONFIG/config/vim-plug-settings.vim
 endif
 
 " vim: ts=2 sts=2 sw=2 expandtab

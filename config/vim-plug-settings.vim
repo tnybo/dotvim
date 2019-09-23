@@ -1,6 +1,7 @@
 call plug#begin('$VIMCONFIG/plugged')
 
 Plug 'junegunn/vim-easy-align'
+Plug 'tnybo/nybot-defaults'
 
 call plug#end()
 

@@ -14,6 +14,9 @@ nnoremap <silent> <M-q><M-a> :qa<CR>
 nnoremap <silent> <Leader>vs :vsplit<CR>
 nnoremap <silent> <Leader>ss :split<CR>
 nnoremap <silent> <Leader>p "0p
+if has('nvim')
+  nnoremap <silent> <Leader>bt :vsplit <Bar> wincmd L <Bar> terminal<CR>
+endif
 
 " vim: ts=2 sts=2 sw=2 expandtab
 

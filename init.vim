@@ -33,6 +33,7 @@ source $VIMCONFIG/default/settings.vim
 source $VIMCONFIG/default/normal-mappings.vim
 source $VIMCONFIG/default/insert-mappings.vim
 source $VIMCONFIG/default/command-mappings.vim
+source $VIMCONFIG/default/terminal-mappings.vim
 
 " Other plugin config files (order shouldn't matter)
 source $VIMCONFIG/config/NERDTree-config.vim
@@ -42,4 +43,5 @@ source $VIMCONFIG/config/gruvbox-config.vim
 source $VIMCONFIG/config/indentLine-config.vim
 
 " vim: ts=2 sts=2 sw=2 expandtab
+
 

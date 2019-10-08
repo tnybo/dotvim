@@ -24,7 +24,22 @@ endif
 " Source configuration files for different plugins
 " =================================================================================================
 
+" These config files should be sourced before any others
 source $VIMCONFIG/config/plugin-manager.vim
-source $VIMCONFIG/config/vim-plug-settings.vim
+source $VIMCONFIG/config/vim-plug-config.vim
+
+" Source default files
+source $VIMCONFIG/default/settings.vim
+source $VIMCONFIG/default/normal-mappings.vim
+source $VIMCONFIG/default/insert-mappings.vim
+source $VIMCONFIG/default/command-mappings.vim
+
+" Other plugin config files (order shouldn't matter)
+source $VIMCONFIG/config/NERDTree-config.vim
+source $VIMCONFIG/config/denite-config.vim
+source $VIMCONFIG/config/editorconfig-config.vim
+source $VIMCONFIG/config/gruvbox-config.vim
+source $VIMCONFIG/config/indentLine-config.vim
 
 " vim: ts=2 sts=2 sw=2 expandtab
+

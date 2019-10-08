@@ -23,6 +23,15 @@ function! s:restoreShellSettings()
   let &shellcmdflag = s:prevShellCmdFlag 
 endfunction
 
+function! s:defaultShellSettings()
+  set shell&
+  set shellquote&
+  set shellpipe&
+  set shellredir&
+  set shellxquote&
+  set shellcmdflag&
+endfunction
+
 function! s:installVimPlug()
   if has('win32')
     let l:autoloadDir = ""
@@ -69,7 +78,7 @@ endfunction
 call <SID>installVimPlug()
 augroup VimEntry
   autocmd!
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  autocmd VimEnter * call <SID>defaultShellSettings() | PlugInstall --sync | source $MYVIMRC
 augroup END
 
 " vim: ts=2 sts=2 sw=2 expandtab

@@ -14,9 +14,21 @@ nnoremap <silent> <M-q><M-a> :qa<CR>
 nnoremap <silent> <Leader>vs :vsplit<CR>
 nnoremap <silent> <Leader>ss :split<CR>
 nnoremap <silent> <Leader>p "0p
+
 if has('nvim')
-  nnoremap <silent> <Leader>bt :vsplit <Bar> wincmd L <Bar> terminal<CR>
+  nnoremap <silent> <Leader>sbt :split <Bar> wincmd J <Bar> call <SID>openMostRecentTerminal()<CR>
+  nnoremap <silent> <Leader>bt :vsplit <Bar> wincmd L <Bar> call <SID>openMostRecentTerminal()<CR>
 endif
+
+
+function! s:openMostRecentTerminal() abort
+  let l:termBuf = <SID>findTerminalBuffer()
+  if l:termBuf != 0
+    execute "buffer " . l:termBuf
+  else
+    execute "terminal"
+  endif
+endfunction
 
 " vim: ts=2 sts=2 sw=2 expandtab
 

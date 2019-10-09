@@ -14,12 +14,43 @@ nnoremap <silent> <M-q><M-a> :qa<CR>
 nnoremap <silent> <Leader>vs :vsplit<CR>
 nnoremap <silent> <Leader>ss :split<CR>
 nnoremap <silent> <Leader>p "0p
+nnoremap <silent> <Leader>tq :call <SID>toggleQuickfix()<CR>
+nnoremap <silent> <Leader>tl :call <SID>toggleLocationList()<CR>
 
 if has('nvim')
   nnoremap <silent> <Leader>sbt :split <Bar> wincmd J <Bar> call <SID>openMostRecentTerminal()<CR>
   nnoremap <silent> <Leader>bt :vsplit <Bar> wincmd L <Bar> call <SID>openMostRecentTerminal()<CR>
 endif
 
+function! s:findTerminalBuffer() abort
+  for l:buf in range(1, bufnr("$"))
+    if bufname(l:buf) =~ "term:.*\\(cmd.*\\|bash.*\\)"
+      return l:buf
+    endif
+  endfor
+  return 0
+endfunction
+
+function! s:toggleQuickfix() abort
+  let l:qfWinid = get(getqflist({'winid': 0}), 'winid', 0)
+  if l:qfWinid != 0
+    cclose
+    wincmd p
+  else
+    copen
+    wincmd p
+  endif
+endfunction
+
+function! s:toggleLocationList() abort
+  let l:qfWinid = get(getloclist(0, {'winid': 0}), 'winid', 0)
+  if l:qfWinid != 0
+    lclose
+  else
+    lopen
+    wincmd p
+  endif
+endfunction
 
 function! s:openMostRecentTerminal() abort
   let l:termBuf = <SID>findTerminalBuffer()

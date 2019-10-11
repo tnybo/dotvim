@@ -42,6 +42,7 @@ if isdirectory(expand('$VIMCONFIG'))
   silent! source $VIMCONFIG/config/NERDCommenter-config.vim
   silent! source $VIMCONFIG/config/denite-config.vim
   silent! source $VIMCONFIG/config/editorconfig-config.vim
+  silent! source $VIMCONFIG/config/fugitive-config.vim
   silent! source $VIMCONFIG/config/gruvbox-config.vim
   silent! source $VIMCONFIG/config/indentLine-config.vim
   silent! source $VIMCONFIG/config/vim-sneak-config.vim

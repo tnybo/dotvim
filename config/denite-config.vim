@@ -36,7 +36,7 @@ call denite#custom#var('grep', 'pattern_opt', ['--regexp'])
 call denite#custom#var('grep', 'separator', ['--'])
 call denite#custom#var('grep', 'final_opts', [])
 
-nnoremap <Leader>ff :Denite file/rec -start-filter<CR>
-nnoremap <Leader>fb :Denite buffer -start-filter<CR>
-nnoremap <Leader>fd :Denite directory_rec -start-filter<CR>
-nnoremap <Leader>fw :Denite grep <CR>
+nnoremap <silent> <Leader>ff :Denite file/rec -start-filter<CR>
+nnoremap <silent> <Leader>fb :Denite buffer -start-filter<CR>
+nnoremap <silent> <Leader>fd :Denite directory_rec -start-filter<CR>
+nnoremap <silent> <Leader>fw :Denite grep <CR>

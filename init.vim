@@ -35,6 +35,7 @@ if isdirectory(expand('$VIMCONFIG'))
   silent! source $VIMCONFIG/default/insert-mappings.vim
   silent! source $VIMCONFIG/default/command-mappings.vim
   silent! source $VIMCONFIG/default/terminal-mappings.vim
+  silent! source $VIMCONFIG/default/visual-mappings.vim
 
   " Other plugin config files (order shouldn't matter)
   silent! source $VIMCONFIG/config/airline-config.vim

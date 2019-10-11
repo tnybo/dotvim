@@ -39,14 +39,14 @@ if isdirectory(expand('$VIMCONFIG'))
 
   " Other plugin config files (order shouldn't matter)
   silent! source $VIMCONFIG/config/airline-config.vim
-  silent! source $VIMCONFIG/config/NERDTree-config.vim
-  silent! source $VIMCONFIG/config/NERDCommenter-config.vim
   silent! source $VIMCONFIG/config/denite-config.vim
   silent! source $VIMCONFIG/config/editorconfig-config.vim
   silent! source $VIMCONFIG/config/fugitive-config.vim
   silent! source $VIMCONFIG/config/gitgutter-config.vim
   silent! source $VIMCONFIG/config/gruvbox-config.vim
   silent! source $VIMCONFIG/config/indentLine-config.vim
+  silent! source $VIMCONFIG/config/NERDCommenter-config.vim
+  silent! source $VIMCONFIG/config/NERDTree-config.vim
   silent! source $VIMCONFIG/config/vim-sneak-config.vim
 endif
 

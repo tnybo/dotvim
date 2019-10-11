@@ -1,5 +1,6 @@
 call plug#begin('$VIMCONFIG/plugged')
 
+Plug 'airblade/vim-gitgutter'
 Plug 'Shougo/denite.nvim'
 Plug 'Yggdroot/indentLine'
 Plug 'dense-analysis/ale'

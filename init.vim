@@ -37,6 +37,7 @@ if isdirectory(expand('$VIMCONFIG'))
   silent! source $VIMCONFIG/default/terminal-mappings.vim
 
   " Other plugin config files (order shouldn't matter)
+  silent! source $VIMCONFIG/config/airline-config.vim
   silent! source $VIMCONFIG/config/NERDTree-config.vim
   silent! source $VIMCONFIG/config/NERDCommenter-config.vim
   silent! source $VIMCONFIG/config/denite-config.vim

@@ -17,6 +17,9 @@ nnoremap <silent> <Leader>p "0p
 nnoremap <silent> <Leader>tq :call <SID>toggleQuickfix()<CR>
 nnoremap <silent> <Leader>tl :call <SID>toggleLocationList()<CR>
 nnoremap <silent> <C-j> i<CR><Esc>
+nnoremap <silent> <Leader>dt :diffthis<CR>
+nnoremap <silent> <Leader>do :diffoff<CR>
+nnoremap <silent> <Leader>du :diffupdate<CR>
 
 if has('nvim')
   nnoremap <silent> <Leader>sbt :split <Bar> wincmd J <Bar> call <SID>openMostRecentTerminal()<CR>

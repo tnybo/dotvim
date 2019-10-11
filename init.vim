@@ -43,6 +43,7 @@ if isdirectory(expand('$VIMCONFIG'))
   silent! source $VIMCONFIG/config/editorconfig-config.vim
   silent! source $VIMCONFIG/config/gruvbox-config.vim
   silent! source $VIMCONFIG/config/indentLine-config.vim
+  silent! source $VIMCONFIG/config/vim-sneak-config.vim
 endif
 
 " vim: ts=2 sts=2 sw=2 expandtab

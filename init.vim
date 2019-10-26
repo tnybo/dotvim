@@ -48,6 +48,7 @@ if isdirectory(expand('$VIMCONFIG'))
   silent! source $VIMCONFIG/config/NERDCommenter-config.vim
   silent! source $VIMCONFIG/config/NERDTree-config.vim
   silent! source $VIMCONFIG/config/vim-sneak-config.vim
+  silent! source $VIMCONFIG/config/haskell-vim-config.vim
 endif
 
 " vim: ts=2 sts=2 sw=2 expandtab

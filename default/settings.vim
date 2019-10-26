@@ -8,6 +8,13 @@ set ignorecase smartcase
 set updatetime=100
 set showtabline=2
 set signcolumn=yes:1
+if exists('$VIMDATA') && isdirectory(expand('$VIMDATA'))
+  if !isdirectory(expand('$VIMDATA') . "/undo")
+    call mkdir(expand('$VIMDATA') . "/undo")
+  endif
+  execute "set undodir=" . expand('$VIMDATA') . "/undo"
+  set undofile
+endif
 
 " vim: ts=2 sts=2 sw=2 expandtab
 

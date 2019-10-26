@@ -1,12 +1,12 @@
-let s:prevShell = &shell 
+let s:prevShell = &shell
 let s:prevShellQuote = &shellquote
 let s:prevShellPipe = &shellpipe
 let s:prevShellRedir = &shellredir
 let s:prevShellXQuote = &shellxquote
 let s:prevShellCmdFlag = &shellcmdflag
-                                    
+
 function! s:cacheShellSettings()
-  let s:prevShell = &shell 
+  let s:prevShell = &shell
   let s:prevShellQuote = &shellquote
   let s:prevShellPipe = &shellpipe
   let s:prevShellRedir = &shellredir
@@ -15,12 +15,12 @@ function! s:cacheShellSettings()
 endfunction
 
 function! s:restoreShellSettings()
-  let &shell = s:prevShell 
-  let &shellquote = s:prevShellQuote 
-  let &shellpipe = s:prevShellPipe 
-  let &shellredir = s:prevShellRedir 
-  let &shellxquote = s:prevShellXQuote 
-  let &shellcmdflag = s:prevShellCmdFlag 
+  let &shell = s:prevShell
+  let &shellquote = s:prevShellQuote
+  let &shellpipe = s:prevShellPipe
+  let &shellredir = s:prevShellRedir
+  let &shellxquote = s:prevShellXQuote
+  let &shellcmdflag = s:prevShellCmdFlag
 endfunction
 
 function! s:defaultShellSettings()

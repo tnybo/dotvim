@@ -28,8 +28,8 @@ if isdirectory(expand('$VIMCONFIG'))
 
   " These config files should be sourced before any others
 
-  silent! source $VIMCONFIG/config/vim-plug-config.vim
   silent! source $VIMCONFIG/config/plugin-manager.vim
+  silent! source $VIMCONFIG/config/vim-plug-config.vim
 
   " Source default files
 

@@ -12,6 +12,8 @@ function! s:denite_my_settings() abort
   \ denite#do_map('open_filter_buffer')
   nnoremap <silent><buffer><expr> a
   \ denite#do_map('toggle_select_all')
+  nnoremap <silent><buffer><expr> s
+  \ denite#do_map('toggle_select')
   nnoremap <silent><buffer><expr> tq
   \ denite#do_map('do_action', 'quickfix')
   nnoremap <silent><buffer><expr> c

@@ -2,3 +2,5 @@ plugged/*
 autoload/*
 *.netrwhist
 bin/*
+*.json
+.ccls-cache/

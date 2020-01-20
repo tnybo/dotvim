@@ -25,30 +25,37 @@ endif
 " =================================================================================================
 
 if isdirectory(expand('$VIMCONFIG'))
+
   " These config files should be sourced before any others
-  silent! source $VIMCONFIG/config/plugin-manager.vim
+
   silent! source $VIMCONFIG/config/vim-plug-config.vim
+  silent! source $VIMCONFIG/config/plugin-manager.vim
 
   " Source default files
-  silent! source $VIMCONFIG/default/settings.vim
-  silent! source $VIMCONFIG/default/normal-mappings.vim
-  silent! source $VIMCONFIG/default/insert-mappings.vim
+
   silent! source $VIMCONFIG/default/command-mappings.vim
+  silent! source $VIMCONFIG/default/insert-mappings.vim
+  silent! source $VIMCONFIG/default/normal-mappings.vim
+  silent! source $VIMCONFIG/default/settings.vim
   silent! source $VIMCONFIG/default/terminal-mappings.vim
   silent! source $VIMCONFIG/default/visual-mappings.vim
 
   " Other plugin config files (order shouldn't matter)
+
   silent! source $VIMCONFIG/config/airline-config.vim
+  silent! source $VIMCONFIG/config/coc-config.vim
   silent! source $VIMCONFIG/config/denite-config.vim
   silent! source $VIMCONFIG/config/editorconfig-config.vim
   silent! source $VIMCONFIG/config/fugitive-config.vim
   silent! source $VIMCONFIG/config/gitgutter-config.vim
   silent! source $VIMCONFIG/config/gruvbox-config.vim
+  silent! source $VIMCONFIG/config/haskell-vim-config.vim
   silent! source $VIMCONFIG/config/indentLine-config.vim
   silent! source $VIMCONFIG/config/NERDCommenter-config.vim
   silent! source $VIMCONFIG/config/NERDTree-config.vim
+  silent! source $VIMCONFIG/config/vim-projectionist-config.vim
   silent! source $VIMCONFIG/config/vim-sneak-config.vim
-  silent! source $VIMCONFIG/config/haskell-vim-config.vim
+
 endif
 
 " vim: ts=2 sts=2 sw=2 expandtab

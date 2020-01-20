@@ -12,6 +12,7 @@ set nobackup
 set nowritebackup
 set cmdheight=2
 set shortmess+=c
+set nowrap
 
 if exists('$VIMDATA') && isdirectory(expand('$VIMDATA'))
   if !isdirectory(expand('$VIMDATA') . "/undo")

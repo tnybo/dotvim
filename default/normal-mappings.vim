@@ -20,6 +20,8 @@ nnoremap <silent> <C-j> i<CR><Esc>
 nnoremap <silent> <Leader>dt :diffthis<CR>
 nnoremap <silent> <Leader>do :diffoff<CR>
 nnoremap <silent> <Leader>du :diffupdate<CR>
+nnoremap <silent> Y y$
+nnoremap <silent> <leader>p "0p
 
 if has('nvim')
   nnoremap <silent> <Leader>sbt :split <Bar> wincmd J <Bar> call <SID>openMostRecentTerminal()<CR>

@@ -1,1 +1,1 @@
-nnoremap <silent> <Leader>gd :Gdiffsplit<CR>
+nnoremap <silent> <leader>ds :Gdiffsplit<CR>

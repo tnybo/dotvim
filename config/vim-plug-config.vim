@@ -2,7 +2,6 @@ call plug#begin('$VIMCONFIG/plugged')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
-Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'janko-m/vim-test'
 Plug 'jiangmiao/auto-pairs'
@@ -17,6 +16,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'Shougo/denite.nvim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-dispatch'
+if !has('win32')
+  Plug 'tpope/vim-eunuch'
+endif
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-repeat'

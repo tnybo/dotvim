@@ -8,6 +8,11 @@ set ignorecase smartcase
 set updatetime=100
 set showtabline=2
 set signcolumn=yes:1
+set nobackup
+set nowritebackup
+set cmdheight=2
+set shortmess+=c
+
 if exists('$VIMDATA') && isdirectory(expand('$VIMDATA'))
   if !isdirectory(expand('$VIMDATA') . "/undo")
     call mkdir(expand('$VIMDATA') . "/undo")

@@ -33,6 +33,7 @@ if isdirectory(expand('$VIMCONFIG'))
 
   " Source default files
 
+  silent! source $VIMCONFIG/default/autocommands.vim
   silent! source $VIMCONFIG/default/command-mappings.vim
   silent! source $VIMCONFIG/default/insert-mappings.vim
   silent! source $VIMCONFIG/default/normal-mappings.vim

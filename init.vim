@@ -44,6 +44,7 @@ if isdirectory(expand('$VIMCONFIG'))
   " Other plugin config files (order shouldn't matter)
 
   silent! source $VIMCONFIG/config/airline-config.vim
+  silent! source $VIMCONFIG/config/auto-pairs-config.vim
   silent! source $VIMCONFIG/config/coc-config.vim
   silent! source $VIMCONFIG/config/denite-config.vim
   silent! source $VIMCONFIG/config/editorconfig-config.vim

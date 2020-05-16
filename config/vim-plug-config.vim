@@ -12,6 +12,7 @@ Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neovimhaskell/haskell-vim'
 Plug 'scrooloose/nerdcommenter'
+Plug 'ndmitchell/ghcid', {'rtp': 'plugins/nvim'}
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/denite.nvim'
 Plug 'tpope/vim-commentary'

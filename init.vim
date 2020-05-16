@@ -56,6 +56,7 @@ if isdirectory(expand('$VIMCONFIG'))
   silent! source $VIMCONFIG/config/NERDTree-config.vim
   silent! source $VIMCONFIG/config/vim-projectionist-config.vim
   silent! source $VIMCONFIG/config/vim-sneak-config.vim
+  silent! source $VIMCONFIG/config/vim-surround-config.vim
 
 endif
 

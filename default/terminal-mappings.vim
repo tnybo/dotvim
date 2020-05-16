@@ -1,6 +1,4 @@
 if has('nvim')
-  autocmd BufWinEnter,WinEnter term://* startinsert
-  autocmd TermOpen * startinsert
   tnoremap <silent> <Esc> <C-\><C-n>
   tnoremap <silent> <M-h> <C-\><C-n><C-w><C-h>
   tnoremap <silent> <M-j> <C-\><C-n><C-w><C-j>
